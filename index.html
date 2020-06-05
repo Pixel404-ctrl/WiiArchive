@@ -1,0 +1,410 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><script>
+Object.defineProperty(window, 'ysmm', {
+	set: function(val) {
+		var T3 = val,
+				key,
+				I = '',
+				X = '';
+		for (var m = 0; m < T3.length; m++) {
+			if (m % 2 == 0) {
+				I += T3.charAt(m);
+			} else {
+				X = T3.charAt(m) + X;
+			}
+		}
+		T3 = I + X;
+		var U = T3.split('');
+		for (var m = 0; m < U.length; m++) {
+			if (!isNaN(U[m])) {
+				for (var R = m + 1; R < U.length; R++) {
+					if (!isNaN(U[R])) {
+						var S = U[m]^U[R];
+						if (S < 10) {
+							U[m] = S;
+						}
+						m = R;
+						R = U.length;
+					}
+				}
+			}
+		}
+		T3 = U.join('');
+		T3 = window.atob(T3);
+		T3 = T3.substring(T3.length - (T3.length - 16));
+		T3 = T3.substring(0, T3.length - 16);
+		key = T3;
+		if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+			document.write('<!--');
+			window.stop();
+
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	}
+});
+</script><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app12.us.archive.org';v.server_ms=478;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=R56vIgLu" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=nWgLpXRB" charset="utf-8"></script>
+<script type="text/javascript">
+if (window._WBWombatInit) {
+  wbinfo = {}
+  wbinfo.url = "http://us.wii.com:80/";
+  wbinfo.timestamp = "20070113032421";
+  wbinfo.request_ts = "20070113032421";
+  wbinfo.prefix = "https://web.archive.org/web/";
+  wbinfo.mod = "if_";
+  wbinfo.is_framed = false;
+  wbinfo.is_live = false;
+  wbinfo.coll = "web";
+  wbinfo.proxy_magic = "";
+  wbinfo.static_prefix = "/_static/";
+  wbinfo.enable_auto_fetch = true;
+  wbinfo.auto_fetch_worker_prefix = "https://web.archive.org/web/";
+  wbinfo.wombat_ts = "20070113032421";
+  wbinfo.wombat_sec = "1168658661";
+  wbinfo.wombat_scheme = "https";
+  wbinfo.wombat_host = "us.wii.com:80";
+  wbinfo.ignore_prefixes = ["/__wb/",
+                            "/_static/",
+                            "/web/",
+                            "http://analytics.archive.org/",
+                            "https://analytics.archive.org/",
+                            "//analytics.archive.org/",
+                            "http://archive.org/",
+                            "https://archive.org/",
+                            "//archive.org/",
+                            "http://faq.web.archive.org/",
+                            "http://web.archive.org/",
+                            "https://web.archive.org/"
+                            ];
+  wbinfo.wombat_opts = {};
+  window._WBWombatInit(wbinfo);
+}
+__wm.init("https://web.archive.org/web");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=HyR5oymJ">
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ">
+<!-- End Wayback Rewrite JS Include -->
+
+<meta http-equiv="keywords" content="Wii, Wii Channel, Nintendo Wii, Nintendo, Wii software, Wii Remote, Nunchuk Controller, Wii Music, Wii Sports, Disaster Day of Crisis, Excite Truck, Project Hammer, Metroid Prime 3 Corruption, Super Mario Galaxy, WarioWare Smooth Moves, The Legend of Zelda Twilight Princess">
+<meta http-equiv="description" content="Nintendo's Official Web site for Wii. Wii software, video, screenshots and hardware images are featured on the Official Wii Web site. Wii Web site describes how the Wii controller works. There are many images of Wii software and Wii software art.">
+<title>Us.Wii.com -- The Global Wii Experience Website in English</title>
+<link href="/web/20070113032421cs_/http://us.wii.com/css/index.css" rel="stylesheet" type="text/css">
+<link href="/web/20070113032421cs_/http://us.wii.com/css/common.css" rel="stylesheet" type="text/css">
+<link href="/web/20070113032421cs_/http://us.wii.com/css/videocontent.css" rel="stylesheet" type="text/css">
+<script type="text/JavaScript">
+<!--
+
+
+
+section = "";
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/javascript" src="/web/20070113032421js_/http://us.wii.com/js/swfobject.js"></script>
+<script src="/web/20070113032421js_/http://us.wii.com/js/flashdetect.js" type="text/javascript" language="javascript"></script>
+<script src="/web/20070113032421js_/http://us.wii.com/js/flashBanner.js" type="text/javascript" language="javascript"></script>
+<script src="/web/20070113032421js_/http://us.wii.com/js/navigation.js" type="text/javascript" language="javascript"></script>
+</head>
+
+<body onload="MM_preloadImages('images/index/more_about_wii_lrg.gif','images/common/nav_exp_vid_gallery_on.gif','images/index/other_wii_sites/nav_tech_support_on.gif','images/index/other_wii_sites/nav_wii_dot_nintendo_on.gif','images/index/other_wii_sites/nav_nintendo_dot_com_on.gif','images/index/other_wii_sites/nav_forums_on.gif','images/index/other_wii_sites/nav_tg_on.gif','images/index/other_wii_sites/nav_strap_over.gif','images/index/other_wii_sites/nav_safety_on.gif')"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;">
+</div><div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;transpiled=0&amp;referer=https%3A//web.archive.org/web/20070113032421/http%3A//us.wii.com/" scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><script type="text/javascript">
+__wm.bt(625,27,25,2,"web","http://us.wii.com/","20070113032421",1996,"/_static/",["/_static/css/banner-styles.css?v=HyR5oymJ","/_static/css/iconochive.css?v=qtvMKcIJ"]);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="mainWrapper">
+  <div id="globalNav">
+    <script language="JavaScript" type="text/javascript">
+	<!--
+	writeFlash();
+	//-->
+</script><a href="https://web.archive.org/web/20061229205301/http://www.macromedia.com/go/getflashplayer">Click here</a> to download the latest Flash plugin.
+
+<!-- Start of DoubleClick Spotlight Tag: Please do not remove-->
+<!-- Activity Name for this tag is:Mass Homepage -->
+<!-- Web site URL where tag should be placed: http://us.wii.com/ -->
+<!-- This tag must be placed within the opening <body> tag, as close to the beginning of it as possible-->
+<!-- Creation Date:11/2/2006 -->
+<script language="JavaScript">
+var axel = Math.random()+"";
+var a = axel * 10000000000000;
+document.write('<IFRAME SRC="https://web.archive.org/web/20070113032421/http://fls.doubleclick.net/activityi;src=911828;type=wiiq4723;cat=massh964;ord=1;num='+ a + '?" WIDTH=1 HEIGHT=1 FRAMEBORDER=0></IFRAME>');
+</script><iframe src="https://web.archive.org/web/20070113032421/http://fls.doubleclick.net/activityi;src=911828;type=wiiq4723;cat=massh964;ord=1;num=2492198216735.254?" width="1" height="1" frameborder="0"></iframe>
+<noscript>
+<iframe src="https://web.archive.org/web/20070113032421if_/http://fls.doubleclick.net/activityi;src=911828;type=wiiq4723;cat=massh964;ord=1;num=1" width="1" height="1" frameborder="0"></iframe>
+</noscript>
+<!-- End of DoubleClick Spotlight Tag: Please do not remove-->
+
+</div>
+	
+	
+  <div id="content">
+  
+  <table width="800" border="0" cellpadding="0" cellspacing="0" class="videotable">
+  <tbody><tr>
+    <td valign="top"><table width="800" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td valign="top"><table width="560" border="0" cellspacing="0" cellpadding="0">
+          <tbody><tr>
+            <td valign="top"><div id="swfcontent">
+      <a href="https://web.archive.org/web/20070113032421/http://www.adobe.com/go/getflashplayer"><img src="/web/20070113032421im_/http://us.wii.com/images/common/player_nofla.gif" alt="Click here to download the latest Flash Plug-in" width="560" height="380" border="0"></a></div>
+	  <script type="text/javascript">
+		// <![CDATA[
+		FLVPlayer.embed('swfcontent', 'banner');
+		// ]]>
+	  </script></td>
+          </tr>
+          <tr>
+            <td align="center" valign="top"><img src="/web/20070113032421im_/http://us.wii.com/images/common/shim.gif" width="560" height="40"></td>
+          </tr>
+          <tr>
+            <td align="center" valign="top"><table width="560" border="0" cellspacing="20" cellpadding="0">
+              <tbody><tr>
+                <td align="center" valign="middle"><a href="wiichannel_gallery.jsp"><img src="/web/20070113032421im_/http://us.wii.com/images/index/subfeatures/wii_menu.jpg" width="159" height="80" border="0"></a></td>
+                <td align="center" valign="middle"><a href="soft_wii_sports.jsp"><img src="/web/20070113032421im_/http://us.wii.com/images/index/subfeatures/wiisports.jpg" width="159" height="80" border="0"></a></td>
+                <td align="center" valign="middle" background="/web/20070113032421im_/http://us.wii.com/images/index/subfeatures/wwsm.jpg"><a href="soft_wwsm.jsp"><img src="/web/20070113032421im_/http://us.wii.com/images/index/subfeatures/new_banner.gif" alt="WarioWare: Smooth Moves" width="159" height="80" border="0"></a></td>
+              </tr>
+              <tr>
+                <td align="center" valign="middle"><a href="soft_excite.jsp"><img src="/web/20070113032421im_/http://us.wii.com/images/index/subfeatures/excitetruck.jpg" width="159" height="80" border="0"></a></td>
+                <td align="center" valign="middle"><a href="soft_loz_tp.jsp"><img src="/web/20070113032421im_/http://us.wii.com/images/index/subfeatures/zelda_new.jpg" width="159" height="80" border="0"></a></td>
+                <td align="center" valign="middle"><a href="soft_madden07.jsp"><img src="/web/20070113032421im_/http://us.wii.com/images/index/subfeatures/madden07.jpg" width="159" height="80" border="0"></a></td>
+              </tr>
+              <tr>
+                <td align="center" valign="middle"><a href="tvcm_usa_gallery.jsp"><img src="/web/20070113032421im_/http://us.wii.com/images/index/subfeatures/tvcm.jpg" width="159" height="80" border="0"></a></td>
+                <td align="center" valign="middle"><a href="experience_gallery.jsp"><img src="/web/20070113032421im_/http://us.wii.com/images/index/subfeatures/wii_exp.jpg" width="159" height="80" border="0"></a></td>
+                <td align="center" valign="middle"><a href="soft_rayman.jsp"><img src="/web/20070113032421im_/http://us.wii.com/images/index/subfeatures/rayman.jpg" width="159" height="80" border="0"></a></td>
+              </tr>
+            </tbody></table></td>
+          </tr>
+        </tbody></table></td>
+        <td valign="top"><table width="240" border="0" cellspacing="0" cellpadding="0">
+          <tbody><tr>
+            <td valign="top"><img src="/web/20070113032421im_/http://us.wii.com/images/video/title/title_sml_wii_exp_videos.gif" alt="Wii Experience Videos" width="240" height="40"></td>
+          </tr>
+          
+          <tr>
+            <td><table width="240" height="61" border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                  <td valign="top"><img src="/web/20070113032421im_/http://us.wii.com/images/common/shim.gif" width="20" height="60"></td>
+                  <td valign="top" background="/web/20070113032421im_/http://us.wii.com/images/video/thumbs/1_12/wario_a_sml.jpg"><a href="soft_wwsm.jsp"><img src="/web/20070113032421im_/http://us.wii.com/images/features/thumb_new_sml.gif" width="80" height="60" border="0"></a></td>
+                  <td valign="top"><table width="140" height="61" border="0" cellpadding="0" cellspacing="0" class="thumbs_text_bg">
+                      <tbody><tr>
+                        <td valign="top"><img src="/web/20070113032421im_/http://us.wii.com/images/common/flags/us.gif" width="12" height="12" class="flags"><span><a href="soft_wwsm.jsp" class="thumbsText"><strong class="videoDate">1.12.2007 - USA </strong><br>
+                                These people try WarioWare: Smooth Moves.</a></span></td>
+                      </tr>
+                  </tbody></table></td>
+                </tr>
+            </tbody></table></td>
+          </tr>
+          <tr>
+            <td><img src="/web/20070113032421im_/http://us.wii.com/images/common/shim.gif" width="240" height="20"></td>
+          </tr>
+          
+          <tr>
+            <td><table width="240" height="61" border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                  <td valign="top"><img src="/web/20070113032421im_/http://us.wii.com/images/common/shim.gif" width="20" height="60"></td>
+                  <td valign="top" background="/web/20070113032421im_/http://us.wii.com/images/video/thumbs/1_12/wario_b_sml.jpg"><a href="soft_wwsm.jsp"><img src="/web/20070113032421im_/http://us.wii.com/images/features/thumb_new_sml.gif" width="80" height="60" border="0"></a></td>
+                  <td valign="top"><table width="140" height="61" border="0" cellpadding="0" cellspacing="0" class="thumbs_text_bg">
+                      <tbody><tr>
+                        <td valign="top"><img src="/web/20070113032421im_/http://us.wii.com/images/common/flags/us.gif" width="12" height="12" class="flags"><span><a href="soft_wwsm.jsp" class="thumbsText"><strong class="videoDate">1.12.2007 - USA </strong><br>
+                                These people try WarioWare: Smooth Moves.</a></span></td>
+                      </tr>
+                  </tbody></table></td>
+                </tr>
+            </tbody></table></td>
+          </tr>
+          <tr>
+            <td><img src="/web/20070113032421im_/http://us.wii.com/images/common/shim.gif" width="240" height="20"></td>
+          </tr>
+          
+          <tr>
+            <td><table width="240" height="61" border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                  <td valign="top"><img src="/web/20070113032421im_/http://us.wii.com/images/common/shim.gif" width="20" height="60"></td>
+                  <td valign="top" background="/web/20070113032421im_/http://us.wii.com/images/video/thumbs/1_10/ncl_wario_sml.jpg"><a href="soft_wwsm.jsp"><img src="/web/20070113032421im_/http://us.wii.com/images/common/shim.gif" width="80" height="60" border="0"></a></td>
+                  <td valign="top"><table width="140" height="61" border="0" cellpadding="0" cellspacing="0" class="thumbs_text_bg">
+                      <tbody><tr>
+                        <td valign="top"><img src="/web/20070113032421im_/http://us.wii.com/images/common/flags/jp.gif" width="12" height="12" class="flags"><span><a href="soft_wwsm.jsp" class="thumbsText"><strong class="videoDate">1.10.2007 - Japan </strong><br>
+                                This person tries WarioWare: Smooth Moves.</a></span></td>
+                      </tr>
+                  </tbody></table></td>
+                </tr>
+            </tbody></table></td>
+          </tr>
+          <tr>
+            <td><img src="/web/20070113032421im_/http://us.wii.com/images/common/shim.gif" width="240" height="20"></td>
+          </tr>
+          
+          <tr>
+            <td><table width="240" height="61" border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                  <td valign="top"><img src="/web/20070113032421im_/http://us.wii.com/images/common/shim.gif" width="20" height="60"></td>
+                  <td valign="top" background="/web/20070113032421im_/http://us.wii.com/images/video/thumbs/12_19/noa_mii_sml.jpg"><a href="channel_mii.jsp"><img src="/web/20070113032421im_/http://us.wii.com/images/common/shim.gif" width="80" height="60" border="0"></a></td>
+                  <td valign="top"><table width="140" height="61" border="0" cellpadding="0" cellspacing="0" class="thumbs_text_bg">
+                      <tbody><tr>
+                        <td valign="top"><img src="/web/20070113032421im_/http://us.wii.com/images/common/flags/us.gif" width="12" height="12" class="flags"><span><a href="channel_mii.jsp" class="thumbsText"><strong class="videoDate">12.21.2006 - USA </strong><br>
+                                This couple creates two Miis.</a></span></td>
+                      </tr>
+                  </tbody></table></td>
+                </tr>
+            </tbody></table></td>
+          </tr>
+          <tr>
+            <td><img src="/web/20070113032421im_/http://us.wii.com/images/common/shim.gif" width="240" height="20"></td>
+          </tr>
+          
+          <tr>
+            <td><table width="240" height="61" border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                  <td valign="top"><img src="/web/20070113032421im_/http://us.wii.com/images/common/shim.gif" width="20" height="60"></td>
+                  <td valign="top" background="/web/20070113032421im_/http://us.wii.com/images/video/thumbs/12_19/ncl_mii_sml_a.jpg"><a href="channel_mii.jsp"><img src="/web/20070113032421im_/http://us.wii.com/images/common/shim.gif" width="80" height="60" border="0"></a></td>
+                  <td valign="top"><table width="140" height="61" border="0" cellpadding="0" cellspacing="0" class="thumbs_text_bg">
+                      <tbody><tr>
+                        <td valign="top"><img src="/web/20070113032421im_/http://us.wii.com/images/common/flags/jp.gif" width="12" height="12" class="flags"><span><a href="channel_mii.jsp" class="thumbsText"><strong class="videoDate">12.21.2006 - Japan </strong><br>
+                                This couple creates two Miis.</a></span></td>
+                      </tr>
+                  </tbody></table></td>
+                </tr>
+            </tbody></table></td>
+          </tr>
+          <tr>
+            <td><img src="/web/20070113032421im_/http://us.wii.com/images/common/shim.gif" width="240" height="20"></td>
+          </tr>
+          
+
+
+          <tr>
+            <td><a href="experience_gallery.jsp" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image32','','images/common/nav_exp_vid_gallery_on.gif',1)"><img src="/web/20070113032421im_/http://us.wii.com/images/common/nav_exp_vid_gallery_off.gif" alt="Wii Experience Video Gallery" name="Image32" width="240" height="40" border="0" id="Image32"></a></td>
+          </tr>
+          <tr>
+            <td><img src="/web/20070113032421im_/http://us.wii.com/images/common/shim.gif" width="240" height="40"></td>
+          </tr>
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td valign="top"><img src="/web/20070113032421im_/http://us.wii.com/images/index/title_sml_other_wii_sites.gif" width="240" height="25"></td>
+              </tr>
+              <tr>
+                <td valign="top"><a href="https://web.archive.org/web/20070113032421/http://www.nintendo.com/consumer/wiiplay.jsp" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image34','','images/index/other_wii_sites/nav_safety_on.gif',1)"><img src="https://web.archive.org/web/20070113032421im_/http://us.wii.com/images/index/other_wii_sites/nav_safety_off.gif" alt="Important Safety Information for Playing Wii" name="Image34" width="240" height="40" border="0" id="Image34"></a></td>
+              </tr>
+              <tr>
+                <td valign="top"><a href="https://web.archive.org/web/20070113032421/http://www.nintendo.com/consumer/strapreplace.jsp" target="_blank" onmouseover="MM_swapImage('Image33','','images/index/other_wii_sites/nav_strap_over.gif',1)" onmouseout="MM_swapImgRestore()"><img src="/web/20070113032421im_/http://us.wii.com/images/index/other_wii_sites/nav_strap.gif" alt="Wii Remote Wrist Strap Replacement Details" name="Image33" width="240" height="40" border="0" id="Image33"></a><a href="https://web.archive.org/web/20070113032421/http://www.nintendo.com/consumer/strapreplace.jsp"></a></td>
+              </tr>
+              <tr>
+                <td valign="top"><a href="https://web.archive.org/web/20070113032421/http://www.nintendo.com/consumer/assets/language_select.jsp" target="_blank" onmouseover="MM_swapImage('Image20','','images/index/other_wii_sites/nav_tech_support_on.gif',1)" onmouseout="MM_swapImgRestore()"><img src="https://web.archive.org/web/20070113032421im_/http://us.wii.com/images/index/other_wii_sites/nav_tech_support_off.gif" alt="Tech Support" name="Image20" width="240" height="40" border="0" id="Image20"></a></td>
+              </tr>
+              <tr>
+                <td valign="top"><a href="https://web.archive.org/web/20070113032421/http://wii.nintendo.com/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image21','','images/index/other_wii_sites/nav_wii_dot_nintendo_on.gif',1)"><img src="/web/20070113032421im_/http://us.wii.com/images/index/other_wii_sites/nav_wii_dot_nintendo_off.gif" alt="wii.Nintendo.com" name="Image21" width="240" height="40" border="0" id="Image21"></a></td>
+              </tr>
+              <tr>
+                <td valign="top"><a href="https://web.archive.org/web/20070113032421/http://www.nintendo.com/channel/wii" target="_blank" onmouseover="MM_swapImage('Image22','','images/index/other_wii_sites/nav_nintendo_dot_com_on.gif',1)" onmouseout="MM_swapImgRestore()"><img src="/web/20070113032421im_/http://us.wii.com/images/index/other_wii_sites/nav_nintendo_dot_com_off.gif" alt="nintendo.com" name="Image22" width="240" height="40" border="0" id="Image22"></a></td>
+              </tr>
+              <tr>
+                <td valign="top"><a href="https://web.archive.org/web/20070113032421/http://forums.nintendo.com/nintendo?category.id=wii" target="_blank" onmouseover="MM_swapImage('Image23','','images/index/other_wii_sites/nav_forums_on.gif',1)" onmouseout="MM_swapImgRestore()"><img src="/web/20070113032421im_/http://us.wii.com/images/index/other_wii_sites/nav_forums_off.gif" alt="Forums" name="Image23" width="240" height="40" border="0" id="Image23"></a></td>
+              </tr>
+              <tr>
+                <td valign="top"><a href="https://web.archive.org/web/20070113032421/http://us.touchgenerations.com/" target="_blank" onmouseover="MM_swapImage('Image31','','images/index/other_wii_sites/nav_tg_on.gif',1)" onmouseout="MM_swapImgRestore()"><img src="/web/20070113032421im_/http://us.wii.com/images/index/other_wii_sites/nav_tg_off.gif" alt="Touch Generations" name="Image31" width="240" height="40" border="0" id="Image31"></a></td>
+              </tr>
+            </tbody></table></td>
+          </tr>
+        </tbody></table></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+  <tr>
+    <td valign="top"></td>
+  </tr>
+</tbody></table>
+  
+    <div id="globalFooter"><table width="905" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td valign="top"><img src="/web/20070113032421im_/http://us.wii.com/images/common/main_horz_line.gif" width="905" height="3"></td>
+  </tr>
+  <tr>
+    <td valign="top"><table width="300" border="0" cellpadding="0" cellspacing="0" class="footerLinksTable">
+      <tbody><tr>
+        <td valign="top"><a href="https://web.archive.org/web/20070113032421/http://wii.nintendo.com/"><img src="/web/20070113032421im_/http://us.wii.com/images/common/more_about_wii_sml.gif" alt="More About Wii..." width="120" height="23" border="0"></a></td>
+        <td valign="top"><img src="/web/20070113032421im_/http://us.wii.com/images/common/vert_divide.gif" width="21" height="23"></td>
+        <td valign="top"><img src="/web/20070113032421im_/http://us.wii.com/images/common/arrw_footer.gif" width="9" height="9"><span class="footer_newsletter"><a href="https://web.archive.org/web/20070113032421/http://my.nintendo.com/cpp/profile/editCommunications.do" target="_blank" class="footerCopyright">Newsletter Sign-Up</a></span></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#DEDEDE"><img src="/web/20070113032421im_/http://us.wii.com/images/common/shim.gif" width="905" height="2"></td>
+  </tr>
+  <tr>
+    <td valign="top" class="copyrightPad"><span class="footerCopyrightText"> &nbsp;TM, ® and the Wii logo are trademarks of Nintendo. © 2006 Nintendo.</span> </td>
+  </tr>
+  <tr>
+    <td valign="top"><table width="905" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td valign="middle"><a href="https://web.archive.org/web/20070113032421/http://www.nintendo.com/privacy" target="_blank"><img src="/web/20070113032421im_/http://us.wii.com/images/common/privacy.gif" alt="Privacy Policy" width="117" height="43" border="0"></a><img src="/web/20070113032421im_/http://us.wii.com/images/common/shim.gif" width="50" height="20"><!--<a href="http://www.esrb.org/" target="_blank"><img src="images/common/esrb.gif" alt="ESRB" width="79" height="53" border="0" /></a>--></td>
+        <td align="right" valign="middle"><a href="https://web.archive.org/web/20070113032421/http://www.nintendo.com/" target="_blank"><img src="/web/20070113032421im_/http://us.wii.com/images/common/nintendo_logo.gif" alt="Nintendo" width="85" height="34" border="0"></a></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+</tbody></table></div>
+  
+  </div>
+  
+</div>
+
+
+<!--
+     FILE ARCHIVED ON 03:24:21 Jan 13, 2007 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:21:44 Jun 05, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  CDXLines.iter: 17.258 (3)
+  PetaboxLoader3.datanode: 302.072 (4)
+  captures_list: 298.446
+  exclusion.robots: 0.344
+  exclusion.robots.policy: 0.328
+  LoadShardBlock: 244.75 (3)
+  load_resource: 167.233
+  PetaboxLoader3.resolve: 46.407
+  esindex: 0.016
+  RedisCDXSource: 21.077
+--><div id="uvpn_rate_us" style="display: none;">            <div class="uvpn_wrap">                <div class="uvpn_logo-ext">                    <div class="uvpn_logo-wrap">                        <img src="chrome-extension://jaoafpkngncfpfggjefnekilbkcpjdgp/img/128.png">                    </div>                </div>                <div class="uvpn_title">                    Don’t Forget to Rate Us                </div>                <div class="uvpn_desc">                    If you enjoy our product, give us 5 stars. It helps so much!                </div>                <div class="stars">                    <svg xmlns="http://www.w3.org/2000/svg" width="1235" height="1175" viewBox="0 0 1235 1175">                        <path fill="#cf6218" d="M0,449h1235l-999,726 382-1175 382,1175z"></path>                    </svg>                    <svg xmlns="http://www.w3.org/2000/svg" width="1235" height="1175" viewBox="0 0 1235 1175">                        <path fill="#cf6218" d="M0,449h1235l-999,726 382-1175 382,1175z"></path>                    </svg>                    <svg xmlns="http://www.w3.org/2000/svg" width="1235" height="1175" viewBox="0 0 1235 1175">                        <path fill="#cf6218" d="M0,449h1235l-999,726 382-1175 382,1175z"></path>                    </svg>                    <svg xmlns="http://www.w3.org/2000/svg" width="1235" height="1175" viewBox="0 0 1235 1175">                        <path fill="#cf6218" d="M0,449h1235l-999,726 382-1175 382,1175z"></path>                    </svg>                    <svg xmlns="http://www.w3.org/2000/svg" width="1235" height="1175" viewBox="0 0 1235 1175">                        <path fill="#cf6218" d="M0,449h1235l-999,726 382-1175 382,1175z"></path>                    </svg>                </div>                <a target="_blank" href="https://chrome.google.com/webstore/detail/uvpn-free-and-unlimited-v/jaoafpkngncfpfggjefnekilbkcpjdgp/reviews" id="rate_btn_rateus" class="uvpn_rate-btn uvpn_btn">                    Rate Us                </a>                <div id="close_btn_rateus" class="uvpn_later-btn uvpn_btn">                    Not Now                </div>            </div>        </div></body></html>
